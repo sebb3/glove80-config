@@ -2,7 +2,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     glove80-zmk = {
-      url = "github:moergo-sc/zmk";
+      url = "github:sebb3/zmk";
       flake = false;
     };
     keymap-drawer = {

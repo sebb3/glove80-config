@@ -24,7 +24,7 @@
 
         for file in "$keymap_dir"/*.keymap
         do
-          name="$(basename --suffix=".keymap" "$file")"
+          name="$(basename -s ".keymap" "$file")"
           config="$out/$name.yaml"
           echo "Found $name keymap"
 
