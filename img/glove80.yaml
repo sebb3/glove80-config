@@ -36,16 +36,16 @@ layers:
   - P
   - '#'
   - Esc
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: Ctrl}
+  - {t: S, h: Alt}
+  - {t: D, h: '$$mdi:monitor-dashboard$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - H
-  - J
-  - K
-  - L
-  - ;
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: K, h: '$$mdi:monitor-dashboard$$'}
+  - {t: L, h: Alt}
+  - {t: ;, h: Ctrl}
   - ''''
   - '`'
   - Z
@@ -72,8 +72,8 @@ layers:
   - $$mdi:arrow-right-bold$$
   - $$mdi:backspace$$
   - $$mdi:backspace-reverse-outline$$
-  - Alt
-  - AltGr
+  - '&lower'
+  - '&lower'
   - $$mdi:keyboard-return$$
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-up-bold$$
