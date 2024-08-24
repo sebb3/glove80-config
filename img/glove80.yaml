@@ -70,7 +70,7 @@ layers:
   - ''
   - ''
   - ''
-  - $$mdi:backspace$$
+  - {t: '$$mdi:backspace$$', h: Cursor}
   - $$mdi:backspace-reverse-outline$$
   - '&lower'
   - '&lower'
@@ -235,6 +235,87 @@ layers:
   - {t: '$$mdi:bluetooth$$', s: '0', type: info}
   - {t: '$$mdi:bluetooth$$', s: '1', type: info}
   - $$mdi:usb$$
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  Cursor:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&Undo'
+  - '&Redo'
+  - ''
+  - ''
+  - ''
+  - ''
+  - Ctrl
+  - Alt
+  - {t: '$$mdi:monitor-dashboard$$', h: Meta, type: info}
+  - $$mdi:apple-keyboard-shift$$
+  - ''
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Pg Down
+  - Pg Up
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
   - ''
   - ''
   - ''
