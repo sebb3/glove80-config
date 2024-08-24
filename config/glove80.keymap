@@ -23,19 +23,10 @@
 #define LAYER_Lower 1
 #define LAYER_Magic 2
 
-/* To deal with the situation where there is no Lower layer, to keep &lower happy */
 
-#ifndef LAYER_Lower
-
-#define LAYER_Lower 0
-
-#
-
-endif {
+/ {
     /* Custom Device-tree */
     /* Glove80 system behavior & macros */
-
-    /
 
     behaviors {
         // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
