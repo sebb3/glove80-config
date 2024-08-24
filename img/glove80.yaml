@@ -11,7 +11,7 @@ layers:
   - F8
   - F9
   - F10
-  - '='
+  - /
   - {t: '1', s: '!'}
   - {t: '2', s: '"'}
   - {t: '3', s: £}
@@ -33,8 +33,8 @@ layers:
   - U
   - I
   - O
-  - P
-  - '#'
+  - ;
+  - ''''
   - Esc
   - {t: A, h: Ctrl}
   - {t: S, h: Alt}
@@ -45,42 +45,42 @@ layers:
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: '$$mdi:monitor-dashboard$$'}
   - {t: L, h: Alt}
-  - {t: ;, h: Ctrl}
-  - ''''
-  - '`'
+  - {t: P, h: Ctrl}
+  - '='
+  - F11
   - Z
   - X
   - C
   - V
   - B
-  - $$mdi:apple-keyboard-shift$$
-  - Ctrl
-  - '&lower'
-  - {t: '$$mdi:monitor-dashboard$$', h: Meta, type: info}
-  - Ctrl
-  - $$mdi:apple-keyboard-shift$$
+  - '&shift_caps'
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-right-bold$$
+  - $$mdi:keyboard-tab$$
   - N
   - M
   - ','
   - .
-  - /
-  - Pg Up
+  - '`'
+  - F12
   - {t: '&rgb_ug_status_macro', h: Magic}
-  - Home
-  - End
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-right-bold$$
+  - ''
+  - ''
+  - ''
+  - ''
   - $$mdi:backspace$$
   - $$mdi:backspace-reverse-outline$$
   - '&lower'
   - '&lower'
   - $$mdi:keyboard-return$$
   - $$mdi:keyboard-space$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-down-bold$$
+  - {t: '&paren_left', s: '&angle_left'}
   - '['
   - ']'
-  - Pg Down
+  - {t: '&paren_right', s: '&angle_right'}
+  - '#'
   Lower:
   - BRI DN
   - BRI UP
