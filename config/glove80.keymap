@@ -161,17 +161,6 @@
             bindings = <&mo>, <&rgb_ug_status_macro>;
         };
 
-        hr: hr {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <100>;
-        };
-
         shift_caps: shift_caps {
             compatible = "zmk,behavior-tap-dance";
             label = "SHIFT_CAPS";
@@ -202,6 +191,41 @@
             label = "SHIFT_SHIFTLOCK";
             #binding-cells = <0>;
             bindings = <&kp LSHIFT>, <&kt LEFT_SHIFT>;
+        };
+
+        hr_left: hr_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HR_LEFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <100>;
+            quick-tap-ms = <200>;
+            hold-trigger-key-positions = <55 55 56 72 73 74 78 79 5 6 7 8 9 16 17 18 19 20 21 28 29 30 31 32 33 40 41 42 43 44 45 58 59 60 61 62 63 74 75 76 77 78 79 53 54 69 70 52 53 54 70 71>;
+        };
+
+        hr_right: hr_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HR_RIGHT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <100>;
+            quick-tap-ms = <200>;
+            hold-trigger-key-positions = <0 1 10 11 12 13 14 22 23 24 25 26 34 35 36 37 38 46 47 48 49 50 64 65 66 67 68 0 1 2 3 4 10 11 12 13 14 15 22 23 24 25 26 27 34 35 36 37 38 39 46 47 48 49 50 51 52 53 54 55 56 64 65 66 67 68 69 70 71 72 55 56 72 73 74 57>;
+        };
+
+        layer_hold: layer_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_HOLD";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <300>;
+            flavor = "balanced";
         };
     };
 
@@ -289,12 +313,12 @@
 
         layer_Base {
             bindings = <
-&kp F1      &kp F2       &kp F3          &kp F4      &kp F5                                                                                                &kp F6        &kp F7            &kp F8             &kp F9         &kp F10
-&kp SLASH   &kp N1       &kp N2          &kp N3      &kp N4       &kp N5                                                                           &kp N6  &kp N7        &kp N8            &kp N9             &kp N0         &kp MINUS
-&kp TAB     &kp Q        &kp W           &kp E       &kp R        &kp T                                                                            &kp Y   &kp U         &kp I             &kp O              &kp SEMI       &kp SQT
-&kp ESC     &hr LCTRL A  &hr LEFT_ALT S  &hr LGUI D  &hr LSHFT F  &kp G                                                                            &kp H   &hr LSHIFT J  &hr LGUI K        &hr LALT L         &hr RCTRL P    &kp EQUAL
-&kp F11     &kp Z        &kp X           &kp C       &kp V        &kp B   &shift_caps      &kp UP_ARROW  &kp DOWN  &kp LEFT  &kp RIGHT  &kp TAB    &kp N   &kp M         &kp COMMA         &kp DOT            &kp GRAVE      &kp F12
-&magic 4 0  &none        &none           &none       &none                &lt 4 BACKSPACE  &kp DEL       &lower    &lower    &kp RET    &kp SPACE          &parang_left  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &parang_right  &kp BACKSLASH
+&kp F1      &kp F2            &kp F3               &kp F4               &kp F5                                                                                                                  &kp F6                  &kp F7                &kp F8                &kp F9                    &kp F10
+&kp SLASH   &kp N1            &kp N2               &kp N3               &kp N4                 &kp N5                                                                                   &kp N6  &kp N7                  &kp N8                &kp N9                &kp N0                    &kp MINUS
+&kp TAB     &kp Q             &kp W                &kp E                &kp R                  &kp T                                                                                    &kp Y   &kp U                   &kp I                 &kp O                 &kp SEMI                  &kp SQT
+&kp ESC     &hr_left LCTRL A  &hr_left LEFT_ALT S  &hr_left LEFT_GUI D  &hr_left LEFT_SHIFT F  &kp G                                                                                    &kp H   &hr_right LEFT_SHIFT J  &hr_right LEFT_GUI K  &hr_right LEFT_ALT L  &hr_right LEFT_CONTROL P  &kp EQUAL
+&kp F11     &kp Z             &kp X                &kp C                &kp V                  &kp B   &shift_caps              &kp UP_ARROW  &kp DOWN  &kp LEFT  &kp RIGHT  &kp TAB    &kp N   &kp M                   &kp COMMA             &kp DOT               &kp GRAVE                 &kp F12
+&magic 4 0  &none             &none                &none                &none                          &layer_hold 4 BACKSPACE  &kp DEL       &lower    &lower    &kp RET    &kp SPACE          &parang_left            &kp LEFT_BRACKET      &kp RIGHT_BRACKET     &parang_right             &kp BACKSLASH
             >;
         };
 
