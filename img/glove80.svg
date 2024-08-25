@@ -42,6 +42,9 @@
 <svg id="mdi:monitor-dashboard">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-monitor-dashboard" viewBox="0 0 24 24"><path d="M21,16V4H3V16H21M21,2A2,2 0 0,1 23,4V16A2,2 0 0,1 21,18H14V20H16V22H8V20H10V18H3C1.89,18 1,17.1 1,16V4C1,2.89 1.89,2 3,2H21M5,6H14V11H5V6M15,6H19V8H15V6M19,9V14H15V9H19M5,12H9V14H5V12M10,12H14V14H10V12Z" /></svg>
 </svg>
+<svg id="mdi:symbol">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-symbol" viewBox="0 0 24 24"><path d="M2 7V14H4V7H2M6 7V9H10V11H8V14H10V13C11.11 13 12 12.11 12 11V9C12 7.89 11.11 7 10 7H6M15.8 7L15.6 9H14V11H15.4L15.2 13H14V15H15L14.8 17H16.8L17 15H18.4L18.2 17H20.2L20.4 15H22V13H20.6L20.8 11H22V9H21L21.2 7H19.2L19 9H17.6L17.8 7H15.8M17.4 11H18.8L18.6 13H17.2L17.4 11M2 15V17H4V15H2M8 15V17H10V15H8Z" /></svg>
+</svg>
 <svg id="mdi:usb">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-usb" viewBox="0 0 24 24"><path d="M15,7V11H16V13H13V5H15L12,1L9,5H11V13H8V10.93C8.7,10.56 9.2,9.85 9.2,9C9.2,7.78 8.21,6.8 7,6.8C5.78,6.8 4.8,7.78 4.8,9C4.8,9.85 5.3,10.56 6,10.93V13A2,2 0 0,0 8,15H11V18.05C10.29,18.41 9.8,19.15 9.8,20A2.2,2.2 0 0,0 12,22.2A2.2,2.2 0 0,0 14.2,20C14.2,19.15 13.71,18.41 13,18.05V15H16A2,2 0 0,0 18,13V11H19V7H15Z" /></svg>
 </svg>
@@ -50,16 +53,6 @@
 </svg>
 <svg id="mdi:volume-low">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-volume-low" viewBox="0 0 24 24"><path d="M7,9V15H11L16,20V4L11,9H7Z" /></svg>
-</svg>
-<svg id="num-nav">
-<svg viewBox="0 0 12 9">
-  <path d="M4.124 6.925v-.436a.44.436 0 0 0-.44-.436.44.436 0 0 0 .44-.436v-.436a.586.581 0 0 0-.586-.581H2.366v.581h1.172v.581h-.586v.582h.586v.581H2.366v.581h1.172a.586.581 0 0 0 .586-.581"/>
-  <path d="M.461 4.6v.581h1.172v.581h-.586a.586.581 0 0 0-.586.582v1.162H2.22v-.581H1.047v-.581h.586a.586.581 0 0 0 .586-.582v-.58a.586.581 0 0 0-.586-.582Z"/>
-  <path d="M1.047 1.5a.586.581 0 0 0-.586.58v1.744a.586.581 0 0 0 .586.581h.586a.586.581 0 0 0 .586-.58V2.08a.586.581 0 0 0-.586-.58h-.586m0 .58h.586v1.744h-.586z"/>
-  <path d="M2.824 1.5v.58h.587v2.325h.586V1.5Z"/>
-  <path d="m5 2.318.647.414c.496-.67 1.174-1.102 2.004-1.192l-.04-.764a.371.372 0 0 1 .376-.373.375.376 0 0 1 .375.375l-.04.76c.83.096 1.505.528 2.004 1.192l.645-.414a.38.38 0 0 1 .513.137.369.369 0 0 1-.137.51l-.686.347a2.94 2.944 0 0 1 0 2.383l.685.35a.37.37 0 0 1 .138.509.377.377 0 0 1-.512.136l-.648-.414c-.495.67-1.173 1.102-2.003 1.192l.041.764a.371.372 0 0 1-.376.373.375.376 0 0 1-.376-.375l.038-.76c-.828-.096-1.504-.528-2.002-1.192l-.644.414a.38.38 0 0 1-.515-.137.369.369 0 0 1 .137-.511l.686-.346a2.94 2.944 0 0 1 0-2.383l-.685-.35a.37.37 0 0 1-.136-.51A.377.377 0 0 1 5 2.316m2.232 1.431c.156-.172.29-.285.519-.33l-.063-1.13c-.588.079-1.047.383-1.41.848l.954.612m1.317-.212c.104.06.191.132.266.212l.877-.61a2.225 2.228 0 0 0-.656-.57 1.903 1.905 0 0 0-.75-.28L8.23 3.413a1.106 1.107 0 0 1 .318.123m.436 1.304 1.01.514a2.214 2.217 0 0 0-.004-1.701l-1.016.51a1.051 1.052 0 0 1 .008.677m-.168.42a1.076 1.077 0 0 1-.595.33l.063 1.128c.588-.077 1.047-.381 1.41-.847l-.878-.611m-1.392.212c-.105-.06-.117-.132-.194-.215l-.95.614c.174.222.393.418.656.57.263.15.468.241.75.278l.059-1.123a1.147 1.148 0 0 1-.32-.123m-.438-1.305-1.008-.514a2.227 2.227 0 0 0 .002 1.701l1.016-.51a1.05 1.051 0 0 1-.008-.677z"/>
-</svg>
-
 </svg>
 </defs>/* end glyphs */
 <style>/* inherit to force styles through use tags */
@@ -602,8 +595,10 @@ text.hold {
 </g>
 <g transform="translate(756, 308)" class="key keypos-75">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 62%">&amp;paren_…</tspan></text>
-<text x="0" y="-24" class="key shifted"><tspan style="font-size: 62%">&amp;angle_…</tspan></text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.0em">Sft+</tspan><tspan x="0" dy="1.2em">9</tspan>
+</text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 83%">Sft+ ,</tspan></text>
 </g>
 <g transform="translate(812, 308)" class="key keypos-76">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -615,8 +610,10 @@ text.hold {
 </g>
 <g transform="translate(924, 336)" class="key keypos-78">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 62%">&amp;paren_…</tspan></text>
-<text x="0" y="-24" class="key shifted"><tspan style="font-size: 62%">&amp;angle_…</tspan></text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.0em">Sft+</tspan><tspan x="0" dy="1.2em">0</tspan>
+</text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 83%">Sft+ .</tspan></text>
 </g>
 <g transform="translate(980, 336)" class="key keypos-79">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -629,8 +626,8 @@ text.hold {
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key info keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key info"/>
-<use href="#num-nav" xlink:href="#num-nav" x="-9" y="-7" height="14" width="18.666666666666668" class="key info tap glyph num-nav"/>
-<text x="0" y="24" class="key info hold"><tspan style="font-size: 71%">Num/Nav</tspan></text>
+<use href="#mdi:symbol" xlink:href="#mdi:symbol" x="-7" y="-7" height="14" width="14.0" class="key info tap glyph mdi:symbol"/>
+<text x="0" y="24" class="key info hold"><tspan style="font-size: 71%">Symbols</tspan></text>
 </g>
 <g transform="translate(84, 56)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

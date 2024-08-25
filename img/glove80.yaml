@@ -76,13 +76,13 @@ layers:
   - '&lower'
   - $$mdi:keyboard-return$$
   - $$mdi:keyboard-space$$
-  - {t: '&paren_left', s: '&angle_left'}
+  - {t: Sft+ 9, s: 'Sft+ ,'}
   - '['
   - ']'
-  - {t: '&paren_right', s: '&angle_right'}
+  - {t: Sft+ 0, s: Sft+ .}
   - '#'
   Lower:
-  - {t: $$num-nav$$, h: Num/Nav, type: info}
+  - {t: '$$mdi:symbol$$', h: Symbols, type: info}
   - ''
   - ''
   - ''
