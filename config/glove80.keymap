@@ -14,14 +14,12 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
+
 // #include <dt-bindings/zmk/rgb_colors.h>
-
-
-
 /* layer names */
-
 
 #define LAYER_Base 0
 #define LAYER_Lower 1
@@ -32,10 +30,12 @@
 #define LAYER_Symbols 6
 
 /* Glove80 system behavior & macros */
+
 / {
     behaviors {
         // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
         // Configure it as a tap dance, so the first tap (or hold) is a &mo and the second tap is a &to
+
         lower: lower {
             compatible = "zmk,behavior-tap-dance";
             label = "LAYER_TAP_DANCE";
@@ -52,15 +52,14 @@
             label = "RGB_UG_STATUS";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&rgb_ug RGB_STATUS>;
+            bindings = <&rgb_ug RGB_STATUS>;
         };
     };
 };
 
-
 / {
-#ifdef BT_DISC_CMD
+    #ifdef BT_DISC_CMD
+
     behaviors {
         bt_0: bt_0 {
             compatible = "zmk,behavior-tap-dance";
@@ -69,6 +68,7 @@
             tapping-term-ms = <200>;
             bindings = <&bt_select_0>, <&bt BT_DISC 0>;
         };
+
         bt_1: bt_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "BT_1";
@@ -76,6 +76,7 @@
             tapping-term-ms = <200>;
             bindings = <&bt_select_1>, <&bt BT_DISC 1>;
         };
+
         bt_2: bt_2 {
             compatible = "zmk,behavior-tap-dance";
             label = "BT_2";
@@ -83,6 +84,7 @@
             tapping-term-ms = <200>;
             bindings = <&bt_select_2>, <&bt BT_DISC 2>;
         };
+
         bt_3: bt_3 {
             compatible = "zmk,behavior-tap-dance";
             label = "BT_3";
@@ -91,80 +93,71 @@
             bindings = <&bt_select_3>, <&bt BT_DISC 3>;
         };
     };
+
     macros {
         bt_select_0: bt_select_0 {
             label = "BT_SELECT_0";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&out OUT_BLE>,
-                  <&bt BT_SEL 0>;
+            bindings = <&out OUT_BLE &bt BT_SEL 0>;
         };
+
         bt_select_1: bt_select_1 {
             label = "BT_SELECT_1";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&out OUT_BLE>,
-                  <&bt BT_SEL 1>;
+            bindings = <&out OUT_BLE &bt BT_SEL 1>;
         };
+
         bt_select_2: bt_select_2 {
             label = "BT_SELECT_2";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&out OUT_BLE>,
-                  <&bt BT_SEL 2>;
+            bindings = <&out OUT_BLE &bt BT_SEL 2>;
         };
+
         bt_select_3: bt_select_3 {
             label = "BT_SELECT_3";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&out OUT_BLE>,
-                  <&bt BT_SEL 3>;
+            bindings = <&out OUT_BLE &bt BT_SEL 3>;
         };
     };
-#else
+
+    #else
+
     macros {
         bt_0: bt_0 {
             label = "BT_0";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&out OUT_BLE>,
-                  <&bt BT_SEL 0>;
+            bindings = <&out OUT_BLE &bt BT_SEL 0>;
         };
+
         bt_1: bt_1 {
             label = "BT_1";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&out OUT_BLE>,
-                  <&bt BT_SEL 1>;
+            bindings = <&out OUT_BLE &bt BT_SEL 1>;
         };
+
         bt_2: bt_2 {
             label = "BT_2";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&out OUT_BLE>,
-                  <&bt BT_SEL 2>;
+            bindings = <&out OUT_BLE &bt BT_SEL 2>;
         };
+
         bt_3: bt_3 {
             label = "BT_3";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&out OUT_BLE>,
-                  <&bt BT_SEL 3>;
+            bindings = <&out OUT_BLE &bt BT_SEL 3>;
         };
     };
-#endif
+
+    #endif
 };
-
-
-
 
 #define GREEN 0x00ff00
 #define RED 0xff0000
@@ -267,11 +260,8 @@
 #define POS_RH_C6R5 63
 #define POS_RH_C6R6 79
 
-
-
-
 / {
-   /* Empty underglow layer definition (for copy-paste)
+    /* Empty underglow layer definition (for copy-paste)
         mylayer {
             bindings = <
                 ______ ______ ______ ______ ______                                                          ______ ______ ______ ______ ______
@@ -284,8 +274,9 @@
             layer-id = <LAYER_Name>;
         };
 */
-underglow-layer {
-        compatible  = "zmk,underglow-layer";
+
+    underglow-layer {
+        compatible = "zmk,underglow-layer";
 
         cursor {
             bindings = <
@@ -296,8 +287,10 @@ underglow-layer {
                 ______ ______ ______ ______ ______ ______ ______ ______ ______  ______ ______ ______ ______ ______ ______ ______ ______ ______
                 ______ ______ ______ ______ ______        ______ ______ ______  ______ ______ ______        ______ ______ ______ ______ ______
             >;
+
             layer-id = <LAYER_Cursor>;
         };
+
         media {
             bindings = <
                   BLUE YELLOW   PINK   PINK   PINK                                                          ______ ______   TEAL   TEAL   TEAL
@@ -306,13 +299,14 @@ underglow-layer {
                 ______ ______ ______ ______ ______ ______                                            ______ ______ ______ ______ ______ ______
                 ______ ______ ______ ______ ______ ______ ______ ______ ______  ______ ______ ______ ______ ______ ______ ______ ______ ______
                 ______ ______ ______ ______ ______        ______ ______ ______  ______ ______ ______        ______ ______ ______ ______ ______
-                >;
+            >;
+
             layer-id = <LAYER_Media>;
         };
     };
 };
 
-/{
+/ {
     behaviors {
         // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
         // Configure it as a tap dance, so the first tap (or hold) is a &mo and the second tap is a &to
@@ -419,67 +413,78 @@ underglow-layer {
 
         layer_Base {
             bindings = <
-                &kp F1      &kp F2            &kp F3               &kp F4               &kp F5                                                                                                                  &kp F6                  &kp F7                &kp F8                &kp F9                    &kp F10
-                &kp SLASH   &kp N1            &kp N2               &kp N3               &kp N4                 &kp N5                                                                                   &kp N6  &kp N7                  &kp N8                &kp N9                &kp N0                    &kp MINUS
-                &kp TAB     &kp Q             &kp W                &kp E                &kp R                  &kp T                                                                                    &kp Y   &kp U                   &kp I                 &kp O                 &kp SEMI                  &kp SQT
-                &kp ESC     &hr_left LCTRL A  &hr_left LEFT_ALT S  &hr_left LEFT_GUI D  &hr_left LEFT_SHIFT F  &kp G                                                                                    &kp H   &hr_right LEFT_SHIFT J  &hr_right LEFT_GUI K  &hr_right LEFT_ALT L  &hr_right LEFT_CONTROL P  &kp EQUAL
-                &kp F11     &kp Z             &kp X                &kp C                &kp V                  &kp B   &shift_caps              &kp UP_ARROW  &kp DOWN  &kp LEFT  &kp RIGHT  &kp TAB    &kp N   &kp M                   &kp COMMA             &kp DOT               &kp GRAVE                 &kp F12
-                &magic LAYER_Magic  0  &none             &none                &none                &none                          &layer_hold LAYER_Cursor BACKSPACE  &kp DEL       &lower    &lower    &kp RET    &kp SPACE          &parang_left            &kp LEFT_BRACKET      &kp RIGHT_BRACKET     &parang_right             &kp BACKSLASH
+&kp F1                &kp F2            &kp F3               &kp F4               &kp F5                                                                                                                                       &kp F6                  &kp F7                &kp F8                &kp F9                    &kp F10
+&kp SLASH             &kp N1            &kp N2               &kp N3               &kp N4                 &kp N5                                                                                                        &kp N6  &kp N7                  &kp N8                &kp N9                &kp N0                    &kp MINUS
+&kp TAB               &kp Q             &kp W                &kp E                &kp R                  &kp T                                                                                                         &kp Y   &kp U                   &kp I                 &kp O                 &kp SEMI                  &kp SQT
+&kp ESC               &hr_left LCTRL A  &hr_left LEFT_ALT S  &hr_left LEFT_GUI D  &hr_left LEFT_SHIFT F  &kp G                                                                                                         &kp H   &hr_right LEFT_SHIFT J  &hr_right LEFT_GUI K  &hr_right LEFT_ALT L  &hr_right LEFT_CONTROL P  &kp EQUAL
+&kp F11               &kp Z             &kp X                &kp C                &kp V                  &kp B   &shift_caps                         &kp UP_ARROW  &kp DOWN  &kp LEFT  &kp RIGHT  &kp TAB              &kp N   &kp M                   &kp COMMA             &kp DOT               &kp GRAVE                 &kp F12
+&magic LAYER_Magic 0  &none             &none                &none                &none                          &layer_hold LAYER_Cursor BACKSPACE  &kp DEL       &lower    &lower    &kp RET    &layer_hold 6 SPACE          &parang_left            &kp LEFT_BRACKET      &kp RIGHT_BRACKET     &parang_right             &kp BACKSLASH
             >;
         };
 
         layer_Lower {
             bindings = <
-                &tog 2      &none      &none           &none           &none                                                                                              &none       &none         &none         &none            &kp PAUSE_BREAK
-                &trans      &none      &none           &none           &none            &kp HOME                                                   &kp LEFT_PARENTHESIS   &kp KP_NUM  &kp KP_EQUAL  &kp KP_SLASH  &kp KP_MULTIPLY  &kp PRINTSCREEN
-                &trans      &none      &none           &kp UP_ARROW    &none            &kp END                                                    &kp RIGHT_PARENTHESIS  &kp KP_N7   &kp KP_N8     &kp KP_N9     &kp KP_MINUS     &kp SCROLLLOCK
-                &trans      &none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PG_UP                                                  &kp PERCENT            &kp KP_N4   &kp KP_N5     &kp KP_N6     &kp KP_PLUS      &none
-                &trans      &kp K_APP  &none           &kp F11         &kp F12          &kp PG_DN  &trans  &trans  &to 0   &trans  &trans  &trans  &kp COMMA              &kp KP_N1   &kp KP_N2     &kp KP_N3     &kp KP_ENTER     &trans
-                &magic 4 0  &kp CAPS   &kp INS         &kp F11         &kp F12                     &trans  &trans  &trans  &trans  &trans  &trans                         &kp KP_N0   &kp KP_N0     &kp KP_DOT    &kp KP_ENTER     &trans
+&tog 2      &none      &none           &none           &none                                                                                              &none       &none         &none         &none            &kp PAUSE_BREAK
+&trans      &none      &none           &none           &none            &kp HOME                                                   &kp LEFT_PARENTHESIS   &kp KP_NUM  &kp KP_EQUAL  &kp KP_SLASH  &kp KP_MULTIPLY  &kp PRINTSCREEN
+&trans      &none      &none           &kp UP_ARROW    &none            &kp END                                                    &kp RIGHT_PARENTHESIS  &kp KP_N7   &kp KP_N8     &kp KP_N9     &kp KP_MINUS     &kp SCROLLLOCK
+&trans      &none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PG_UP                                                  &kp PERCENT            &kp KP_N4   &kp KP_N5     &kp KP_N6     &kp KP_PLUS      &none
+&trans      &kp K_APP  &none           &kp F11         &kp F12          &kp PG_DN  &trans  &trans  &to 0   &trans  &trans  &trans  &kp COMMA              &kp KP_N1   &kp KP_N2     &kp KP_N3     &kp KP_ENTER     &trans
+&magic 4 0  &kp CAPS   &kp INS         &kp F11         &kp F12                     &trans  &trans  &trans  &trans  &trans  &trans                         &kp KP_N0   &kp KP_N0     &kp KP_DOT    &kp KP_ENTER     &trans
             >;
         };
 
         layer_Media {
             bindings = <
-                &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT                                                                  &trans  &trans  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
-                &trans    &trans                &trans      &trans            &trans      &trans                                                  &trans  &trans  &trans  &trans      &trans             &trans
-                &trans                &trans                &trans      &trans            &trans      &trans                                                  &trans  &trans  &trans  &trans      &trans             &trans
-                &trans                &trans                &trans      &trans            &trans      &trans                                                  &trans  &trans  &trans  &trans      &trans             &trans
-                &trans                &trans                &trans      &trans            &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans             &trans
-                &trans                &trans                &trans      &trans            &trans              &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans             &trans
+&kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT                                                                  &trans  &trans  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+&trans                &trans                &trans      &trans            &trans      &trans                                                  &trans  &trans  &trans  &trans      &trans             &trans
+&trans                &trans                &trans      &trans            &trans      &trans                                                  &trans  &trans  &trans  &trans      &trans             &trans
+&trans                &trans                &trans      &trans            &trans      &trans                                                  &trans  &trans  &trans  &trans      &trans             &trans
+&trans                &trans                &trans      &trans            &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans             &trans
+&trans                &trans                &trans      &trans            &trans              &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans             &trans
             >;
         };
 
         layer_Magic {
             bindings = <
-                &bt BT_CLR   &none            &none            &none            &none                                                                                     &none  &none  &none  &none  &bt BT_CLR_ALL
-                &none        &none            &none            &none            &none            &none                                                             &none  &none  &none  &none  &none  &none
-                &none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                   &none  &none  &none  &none  &none  &none
-                &bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &none  &none  &none  &none  &none  &bootloader
-                &sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none         &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
-                &none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB  &none  &none  &none         &none  &none  &none  &none  &none
+&bt BT_CLR   &none            &none            &none            &none                                                                                     &none  &none  &none  &none  &bt BT_CLR_ALL
+&none        &none            &none            &none            &none            &none                                                             &none  &none  &none  &none  &none  &none
+&none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                   &none  &none  &none  &none  &none  &none
+&bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &none  &none  &none  &none  &none  &bootloader
+&sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none         &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
+&none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB  &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
 
         layer_Cursor {
             bindings = <
-                &none  &none      &none     &none     &none                                                                 &none          &none        &none      &none  &none
-                &none  &none      &none     &none     &none      &none                                            &none     &none          &none        &none      &none  &none
-                &none  &none      &none     &none     &none      &none                                            &none     &Undo          &Redo        &none      &none  &none
-                &none  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &none                                            &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &none  &none
-                &none  &none      &none     &none     &none      &none  &none  &none  &none  &none  &none  &none  &none     &kp PAGE_DOWN  &kp PAGE_UP  &none      &none  &none
-                &none  &none      &none     &none     &none             &none  &none  &none  &none  &none  &none            &none          &none        &none      &none  &none
+&none  &none      &none     &none     &none                                                                 &none          &none        &none      &none  &none
+&none  &none      &none     &none     &none      &none                                            &none     &none          &none        &none      &none  &none
+&none  &none      &none     &none     &none      &none                                            &none     &Undo          &Redo        &none      &none  &none
+&none  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &none                                            &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &none  &none
+&none  &none      &none     &none     &none      &none  &none  &none  &none  &none  &none  &none  &none     &kp PAGE_DOWN  &kp PAGE_UP  &none      &none  &none
+&none  &none      &none     &none     &none             &none  &none  &none  &none  &none  &none            &none          &none        &none      &none  &none
             >;
         };
 
         layer_Swedish {
             bindings = <
-                &none  &none      &none     &none     &none                                                                 &none          &none        &none      &none  &none
-                &none  &none      &none     &none     &none      &none                                            &none     &none          &none        &none      &none  &none
-                &none  &none      &none     &none     &none      &none                                            &none     &Undo          &Redo        &none      &none  &none
-                &none  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &none                                            &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &none  &none
-                &none  &none      &none     &none     &none      &none  &none  &none  &none  &none  &none  &none  &none     &kp PAGE_DOWN  &kp PAGE_UP  &none      &none  &none
-                &none  &none      &none     &none     &none             &none  &none  &none  &none  &none  &none            &none          &none        &none      &none  &none
+&none  &none      &none     &none     &none                                                                 &none          &none        &none      &none  &none
+&none  &none      &none     &none     &none      &none                                            &none     &none          &none        &none      &none  &none
+&none  &none      &none     &none     &none      &none                                            &none     &Undo          &Redo        &none      &none  &none
+&none  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &none                                            &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &none  &none
+&none  &none      &none     &none     &none      &none  &none  &none  &none  &none  &none  &none  &none     &kp PAGE_DOWN  &kp PAGE_UP  &none      &none  &none
+&none  &none      &none     &none     &none             &none  &none  &none  &none  &none  &none            &none          &none        &none      &none  &none
+            >;
+        };
+
+        layer_Symbols {
+            bindings = <
+&trans            &trans          &trans                &trans                 &trans                                                                                                     &trans         &trans       &trans     &trans  &trans
+&trans            &trans          &trans                &trans                 &trans           &trans                                                                            &trans  &trans         &trans       &trans     &trans  &trans
+&trans            &trans          &trans                &trans                 &trans           &trans                                                                            &trans  &trans         &trans       &trans     &trans  &trans
+&kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET                                                                 &trans  &kp BACKSPACE  &kp TAB      &kp SPACE  &trans  &trans
+&trans            &trans          &kp EQUAL             &kp UNDER              &trans           &trans             &trans   &trans             &trans     &trans  &trans  &trans  &trans  &kp DEL        &kp LS(TAB)  &kp ENTER  &trans  &trans
+&trans            &trans          &trans                &trans                 &trans                              &kp SQT  &kp DOUBLE_QUOTES  &kp GRAVE  &trans  &trans  &trans          &trans         &trans       &trans     &trans  &trans
             >;
         };
     };
