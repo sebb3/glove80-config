@@ -479,12 +479,12 @@
 
         layer_Symbols {
             bindings = <
-&trans            &trans          &trans                &trans                 &trans                                                                                                     &trans         &trans       &trans     &trans  &trans
-&trans            &trans          &trans                &trans                 &trans           &trans                                                                            &trans  &trans         &trans       &trans     &trans  &trans
-&trans            &trans          &trans                &trans                 &trans           &trans                                                                            &trans  &trans         &trans       &trans     &trans  &trans
-&kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET                                                                 &trans  &kp BACKSPACE  &kp TAB      &kp SPACE  &trans  &trans
-&trans            &trans          &kp EQUAL             &kp UNDER              &trans           &trans             &trans   &trans             &trans     &trans  &trans  &trans  &trans  &kp DEL        &kp LS(TAB)  &kp ENTER  &trans  &trans
-&trans            &trans          &trans                &trans                 &trans                              &kp SQT  &kp DOUBLE_QUOTES  &kp GRAVE  &trans  &trans  &trans          &trans         &trans       &trans     &trans  &trans
+&trans            &trans          &trans                &trans                 &trans                                                                                                        &trans         &trans        &trans     &trans  &trans
+&kp QUESTION      &kp EXCL        &kp AT                &kp POUND              &kp DOLLAR       &kp PERCENT                                                                       &kp CARET  &kp AMPS       &kp ASTERISK  &trans     &trans  &trans
+&trans            &kp LT          &kp BACKSLASH         &kp SLASH              &kp GT           &kp TILDE                                                                         &kp COLON  &kp AMPS       &kp PIPE      &trans     &trans  &trans
+&kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET                                                                 &kp SEMI   &kp BACKSPACE  &kp TAB       &kp SPACE  &trans  &trans
+&trans            &trans          &kp EQUAL             &kp UNDER              &kp PLUS         &kp MINUS          &trans   &trans             &trans     &trans  &trans  &trans  &trans     &kp DEL        &kp LS(TAB)   &kp ENTER  &trans  &trans
+&trans            &trans          &trans                &trans                 &trans                              &kp SQT  &kp DOUBLE_QUOTES  &kp GRAVE  &trans  &trans  &trans             &trans         &trans        &trans     &trans  &trans
             >;
         };
     };
