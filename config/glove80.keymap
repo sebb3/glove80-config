@@ -342,11 +342,9 @@
         // Configure it as a tap dance, so the first tap (or hold) is a &mo and the second tap is a &to
 
         magic: magic {
-            compatible = "zmk,behavior-hold-tap";
+            compatible = "zmk,behavior-tap-dance";
             label = "MAGIC_HOLD_TAP";
             #binding-cells = <0>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
             bindings = <&mo LAYER_Magic>, <&rgb_ug_status_macro>;
         };
 
