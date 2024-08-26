@@ -537,12 +537,12 @@
 
         layer_Swedish {
             bindings = <
-&none  &none  &none  &none  &none                                                          &none           &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                            &none  &none           &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                            &none  &Undo           &Redo  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                            &none  &kp LEFT_SHIFT  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none           &none  &none  &none  &none
-&none  &none  &none  &none  &none         &none  &none  &none  &none  &none  &none         &none           &none  &none  &none  &none
+&none  &none  &none    &none    &none                                                            &none           &none  &none  &none  &none
+&none  &none  &none    &none    &none    &none                                            &none  &none           &none  &none  &none  &none
+&none  &none  &none    &none    &none    &none                                            &none  &Undo           &Redo  &none  &none  &none
+&none  &none  &swe_au  &swe_ae  &swe_oe  &none                                            &none  &kp LEFT_SHIFT  &none  &none  &none  &none
+&none  &none  &none    &none    &none    &none  &none  &none  &none  &none  &none  &none  &none  &none           &none  &none  &none  &none
+&none  &none  &none    &none    &none           &none  &none  &none  &none  &none  &none         &none           &none  &none  &none  &none
             >;
         };
 
