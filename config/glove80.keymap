@@ -390,6 +390,33 @@
             quick-tap-ms = <300>;
             flavor = "balanced";
         };
+
+        swe_au: swe_au {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SWE_AU";
+            bindings = <&swe_au_low>, <&swe_au_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        swe_ae: swe_ae {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SWE_AE";
+            bindings = <&swe_ae_low>, <&swe_ae_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        swe_oe: swe_oe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SWE_OE";
+            bindings = <&swe_oe_low>, <&swe_oe_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -405,6 +432,48 @@
             #binding-cells = <0>;
             bindings = <&kp LS(LG(Z))>;
             label = "REDO";
+        };
+
+        swe_au_low: swe_au {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(A)>;
+            label = "SWE_AU";
+        };
+
+        swe_ae_low: swe_ae {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U) &kp A>;
+            label = "SWE_AE";
+        };
+
+        swe_oe_low: swe_oe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U) &kp O>;
+            label = "SWE_OE";
+        };
+
+        swe_au_upper: swe_au_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LS(A))>;
+            label = "SWE_AU_UPPER";
+        };
+
+        swe_ae_upper: swe_ae_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U) &kp LS(A)>;
+            label = "SWE_AE_UPPER";
+        };
+
+        swe_oe_upper: swe_oe_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(U) &kp LS(O)>;
+            label = "SWE_OE_UPPER";
         };
     };
 
