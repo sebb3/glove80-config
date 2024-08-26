@@ -260,6 +260,10 @@
 #define POS_RH_C6R5 63
 #define POS_RH_C6R6 79
 
+
+#define HYPER LC(LA(LEFT_GUI))
+
+
 / {
     /* Empty underglow layer definition (for copy-paste)
         mylayer {
@@ -303,6 +307,32 @@
 
             layer-id = <LAYER_Media>;
         };
+
+        swedish {
+            bindings = <
+                ______ ______ ______ ______ ______                                                          ______ ______ ______ ______ ______
+                ______ ______ ______ ______ ______ ______                                            ______ ______ ______ ______ ______ ______
+                ______ ______ ______ ______ ______ ______                                            ______ ______ ______ ______ ______ ______
+                ______ ______    RED   BLUE  GREEN ______                                            ______ ______ ______ ______ ______ ______
+                ______ ______ ______ ______ ______ ______ ______ ______ ______  ______ ______ ______ ______ ______ ______ ______ ______ ______
+                ______ ______ ______ ______ ______        ______ ______ ______  ______ ______ ______        ______ ______ ______ ______ ______
+            >;
+
+            layer-id = <LAYER_Swedish>;
+        };
+
+        symbols {
+            bindings = <
+                ______ ______ ______ ______ ______                                                          ______ ______ ______ ______ ______
+                 BROWN  BROWN  BROWN  BROWN  BROWN  BROWN                                             BROWN  BROWN  BROWN  BROWN  BROWN  BROWN
+                ______  GREEN YELLOW YELLOW  GREEN PURPLE                                              BLUE   PINK   PINK ______ ______ ______
+                 GREEN  GREEN  GREEN  GREEN  GREEN  GREEN                                              BLUE    RED    RED    RED ______ ______
+                ______ ______   TEAL   TEAL   TEAL   TEAL ______ ______ ______  ______ ______ ______ ______    RED    RED    RED ______ ______
+                ______ ______ ______ ______ ______           RED    RED    RED  ______ ______ ______        ______ ______ ______ ______ ______
+            >;
+
+            layer-id = <LAYER_Symbols>;
+        };
     };
 };
 
@@ -314,10 +344,10 @@
         magic: magic {
             compatible = "zmk,behavior-hold-tap";
             label = "MAGIC_HOLD_TAP";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&mo>, <&rgb_ug_status_macro>;
+            bindings = <&mo LAYER_Magic>, <&rgb_ug_status_macro>;
         };
 
         shift_caps: shift_caps {
@@ -476,12 +506,6 @@
             label = "SWE_OE_UPPER";
         };
 
-        hyper: hyper {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LC(LEFT_GUI))>;
-            label = "HYPER";
-        };
     };
 
     keymap {
@@ -491,10 +515,10 @@
             bindings = <
 &kp F1                &kp F2            &kp F3               &kp F4                       &kp F5                                                                                                                                                 &kp F6                  &kp F7                    &kp F8                &kp F9                    &kp F10
 &kp SLASH             &kp N1            &kp N2               &kp N3                       &kp N4                 &kp N5                                                                                                                  &kp N6  &kp N7                  &kp N8                    &kp N9                &kp N0                    &kp MINUS
-&kp TAB               &kp Q             &kp W                &hr_left LS(LA(LEFT_GUI)) E  &kp R                  &kp T                                                                                                                   &kp Y   &kp U                   &hr_right LA(LC(LGUI)) I  &kp O                 &kp SEMI                  &kp SQT
+&kp TAB               &kp Q             &kp W                &hr_left HYPER E  &kp R                  &kp T                                                                                                                   &kp Y   &kp U                   &hr_right HYPER I  &kp O                 &kp SEMI                  &kp SQT
 &kp ESC               &hr_left LCTRL A  &hr_left LEFT_ALT S  &hr_left LEFT_GUI D          &hr_left LEFT_SHIFT F  &kp G                                                                                                                   &kp H   &hr_right LEFT_SHIFT J  &hr_right LEFT_GUI K      &hr_right LEFT_ALT L  &hr_right LEFT_CONTROL P  &kp EQUAL
 &kp F11               &kp Z             &kp X                &kp C                        &kp V                  &kp B   &shift_caps                         &kp UP_ARROW  &kp DOWN  &kp LEFT  &kp RIGHT            &kp TAB              &kp N   &kp M                   &kp COMMA                 &kp DOT               &kp GRAVE                 &kp F12
-&magic LAYER_Magic 0  &none             &none                &none                        &none                          &layer_hold LAYER_Cursor BACKSPACE  &kp DEL       &lower    &lower    &layer_hold 5 ENTER  &layer_hold 6 SPACE          &parang_left            &kp LEFT_BRACKET          &kp RIGHT_BRACKET     &parang_right             &kp BACKSLASH
+&magic                &none             &none                &none                        &none                          &layer_hold LAYER_Cursor BACKSPACE  &kp DEL       &lower    &lower    &layer_hold 5 ENTER  &layer_hold 6 SPACE          &parang_left            &kp LEFT_BRACKET          &kp RIGHT_BRACKET     &parang_right             &kp BACKSLASH
             >;
         };
 
@@ -505,7 +529,7 @@
 &trans      &none      &none           &kp UP_ARROW    &none            &kp END                                                    &kp RIGHT_PARENTHESIS  &kp KP_N7   &kp KP_N8     &kp KP_N9     &kp KP_MINUS     &kp SCROLLLOCK
 &trans      &none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PG_UP                                                  &kp PERCENT            &kp KP_N4   &kp KP_N5     &kp KP_N6     &kp KP_PLUS      &none
 &trans      &kp K_APP  &none           &kp F11         &kp F12          &kp PG_DN  &trans  &trans  &to 0   &trans  &trans  &trans  &kp COMMA              &kp KP_N1   &kp KP_N2     &kp KP_N3     &kp KP_ENTER     &trans
-&magic 4 0  &kp CAPS   &kp INS         &kp F11         &kp F12                     &trans  &trans  &trans  &trans  &trans  &trans                         &kp KP_N0   &kp KP_N0     &kp KP_DOT    &kp KP_ENTER     &trans
+&magic      &kp CAPS   &kp INS         &kp F11         &kp F12                     &trans  &trans  &trans  &trans  &trans  &trans                         &kp KP_N0   &kp KP_N0     &kp KP_DOT    &kp KP_ENTER     &trans
             >;
         };
 
