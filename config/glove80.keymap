@@ -475,6 +475,13 @@
             bindings = <&kp LA(U) &kp LS(O)>;
             label = "SWE_OE_UPPER";
         };
+
+        hyper: hyper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LC(LEFT_GUI))>;
+            label = "HYPER";
+        };
     };
 
     keymap {
@@ -482,12 +489,12 @@
 
         layer_Base {
             bindings = <
-&kp F1                &kp F2            &kp F3               &kp F4               &kp F5                                                                                                                                       &kp F6                  &kp F7                &kp F8                &kp F9                    &kp F10
-&kp SLASH             &kp N1            &kp N2               &kp N3               &kp N4                 &kp N5                                                                                                        &kp N6  &kp N7                  &kp N8                &kp N9                &kp N0                    &kp MINUS
-&kp TAB               &kp Q             &kp W                &kp E                &kp R                  &kp T                                                                                                         &kp Y   &kp U                   &kp I                 &kp O                 &kp SEMI                  &kp SQT
-&kp ESC               &hr_left LCTRL A  &hr_left LEFT_ALT S  &hr_left LEFT_GUI D  &hr_left LEFT_SHIFT F  &kp G                                                                                                         &kp H   &hr_right LEFT_SHIFT J  &hr_right LEFT_GUI K  &hr_right LEFT_ALT L  &hr_right LEFT_CONTROL P  &kp EQUAL
-&kp F11               &kp Z             &kp X                &kp C                &kp V                  &kp B   &shift_caps                         &kp UP_ARROW  &kp DOWN  &kp LEFT  &kp RIGHT  &kp TAB              &kp N   &kp M                   &kp COMMA             &kp DOT               &kp GRAVE                 &kp F12
-&magic LAYER_Magic 0  &none             &none                &none                &none                          &layer_hold LAYER_Cursor BACKSPACE  &kp DEL       &lower    &lower    &kp RET    &layer_hold 6 SPACE          &parang_left            &kp LEFT_BRACKET      &kp RIGHT_BRACKET     &parang_right             &kp BACKSLASH
+&kp F1                &kp F2            &kp F3               &kp F4                       &kp F5                                                                                                                                                 &kp F6                  &kp F7                    &kp F8                &kp F9                    &kp F10
+&kp SLASH             &kp N1            &kp N2               &kp N3                       &kp N4                 &kp N5                                                                                                                  &kp N6  &kp N7                  &kp N8                    &kp N9                &kp N0                    &kp MINUS
+&kp TAB               &kp Q             &kp W                &hr_left LS(LA(LEFT_GUI)) E  &kp R                  &kp T                                                                                                                   &kp Y   &kp U                   &hr_right LA(LC(LGUI)) I  &kp O                 &kp SEMI                  &kp SQT
+&kp ESC               &hr_left LCTRL A  &hr_left LEFT_ALT S  &hr_left LEFT_GUI D          &hr_left LEFT_SHIFT F  &kp G                                                                                                                   &kp H   &hr_right LEFT_SHIFT J  &hr_right LEFT_GUI K      &hr_right LEFT_ALT L  &hr_right LEFT_CONTROL P  &kp EQUAL
+&kp F11               &kp Z             &kp X                &kp C                        &kp V                  &kp B   &shift_caps                         &kp UP_ARROW  &kp DOWN  &kp LEFT  &kp RIGHT            &kp TAB              &kp N   &kp M                   &kp COMMA                 &kp DOT               &kp GRAVE                 &kp F12
+&magic LAYER_Magic 0  &none             &none                &none                        &none                          &layer_hold LAYER_Cursor BACKSPACE  &kp DEL       &lower    &lower    &layer_hold 5 ENTER  &layer_hold 6 SPACE          &parang_left            &kp LEFT_BRACKET          &kp RIGHT_BRACKET     &parang_right             &kp BACKSLASH
             >;
         };
 
