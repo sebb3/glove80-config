@@ -26,12 +26,12 @@ layers:
   - $$mdi:keyboard-tab$$
   - Q
   - W
-  - E
+  - {t: E, h: 'Sft+Alt+ $$mdi:monitor-dashboard$$'}
   - R
   - T
   - Y
   - U
-  - I
+  - {t: I, h: 'Alt+Ctl+ $$mdi:monitor-dashboard$$'}
   - O
   - ;
   - ''''
@@ -74,7 +74,7 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - '&lower'
   - '&lower'
-  - $$mdi:keyboard-return$$
+  - {t: '$$mdi:keyboard-return$$', h: Swedish}
   - {t: '$$mdi:keyboard-space$$', h: Symbols}
   - {t: Sft+ 9, s: 'Sft+ ,'}
   - '['
@@ -479,7 +479,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''

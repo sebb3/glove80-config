@@ -506,8 +506,8 @@ text.hold {
 <g transform="translate(598, 427) rotate(-60.0)" class="key keypos-72">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
-<g transform="translate(639, 379) rotate(-40.0)" class="key keypos-73">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<g transform="translate(639, 379) rotate(-40.0)" class="key held keypos-73">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(694, 347) rotate(-20.0)" class="key keypos-74">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
