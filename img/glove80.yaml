@@ -81,87 +81,6 @@ layers:
   - ']'
   - {t: Sft+ 0, s: Sft+ .}
   - '#'
-  Lower:
-  - {t: '$$mdi:symbol$$', h: Symbols, type: info}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - PAUSE BREAK
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - Home
-  - (
-  - Num Lock
-  - '='
-  - /
-  - '*'
-  - Print
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - ''
-  - ''
-  - $$mdi:arrow-up-bold$$
-  - ''
-  - End
-  - )
-  - '7'
-  - '8'
-  - '9'
-  - '-'
-  - SCROLLLOCK
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - ''
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
-  - Pg Up
-  - '%'
-  - '4'
-  - '5'
-  - '6'
-  - +
-  - ''
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - APP
-  - ''
-  - F11
-  - F12
-  - Pg Down
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: Base, h: toggle}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - ','
-  - '1'
-  - '2'
-  - '3'
-  - KP ENTER
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - '&magic'
-  - CAPS
-  - INS
-  - F11
-  - F12
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - '0'
-  - '0'
-  - .
-  - KP ENTER
-  - {t: '$$mdi:chevron-down$$', type: trans}
   Media:
   - BRIGHTNESS DEC
   - BRIGHTNESS INC
@@ -242,6 +161,87 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  Lower:
+  - {t: '$$mdi:keyboard-outline$$', h: Qwerty, type: info}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - PAUSE BREAK
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - Home
+  - (
+  - Num Lock
+  - '='
+  - /
+  - '*'
+  - Print
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ''
+  - ''
+  - $$mdi:arrow-up-bold$$
+  - ''
+  - End
+  - )
+  - '7'
+  - '8'
+  - '9'
+  - '-'
+  - SCROLLLOCK
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ''
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - Pg Up
+  - '%'
+  - '4'
+  - '5'
+  - '6'
+  - +
+  - ''
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - APP
+  - ''
+  - F11
+  - F12
+  - Pg Down
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: Base, h: toggle}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ','
+  - '1'
+  - '2'
+  - '3'
+  - KP ENTER
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - '&magic'
+  - CAPS
+  - INS
+  - F11
+  - F12
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - '0'
+  - '0'
+  - .
+  - KP ENTER
   - {t: '$$mdi:chevron-down$$', type: trans}
   Magic:
   - {t: '$$mdi:bluetooth-off$$', h: Clear, type: info}
@@ -383,10 +383,10 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - Pg Down
-  - Pg Up
-  - ''
+  - '&nav_back'
+  - '&tab_prev'
+  - '&tab_next'
+  - '&nav_fw'
   - ''
   - ''
   - ''
@@ -398,8 +398,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - Alt+ $$mdi:keyboard-tab$$
+  - Gui+ $$mdi:keyboard-tab$$
   - ''
   - ''
   - ''
