@@ -65,7 +65,7 @@ layers:
   - .
   - '`'
   - F12
-  - {t: '&rgb_ug_status_macro', h: Cursor}
+  - {t: '&rgb_ug_status_macro', h: Magic}
   - ''
   - ''
   - ''
@@ -308,7 +308,7 @@ layers:
   - ''
   - ''
   - Reset
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
@@ -389,12 +389,93 @@ layers:
   - ''
   - ''
   - ''
+  - {type: held alternate}
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
   - ''
   - ''
   - ''
   - ''
-  - {type: held alternate}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  Swedish:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&Undo'
+  - '&Redo'
+  - ''
+  - ''
+  - ''
+  - ''
+  - Ctrl
+  - Alt
+  - {t: '$$mdi:monitor-dashboard$$', h: Meta, type: info}
+  - $$mdi:apple-keyboard-shift$$
+  - ''
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Pg Down
+  - Pg Up
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
