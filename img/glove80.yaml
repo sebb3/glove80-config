@@ -26,12 +26,12 @@ layers:
   - $$mdi:keyboard-tab$$
   - Q
   - W
-  - {t: E, h: 'Sft+Alt+ $$mdi:monitor-dashboard$$'}
+  - {t: E, h: 'Ctl+Alt+ $$mdi:monitor-dashboard$$'}
   - R
   - T
   - Y
   - U
-  - {t: I, h: 'Alt+Ctl+ $$mdi:monitor-dashboard$$'}
+  - {t: I, h: 'Ctl+Alt+ $$mdi:monitor-dashboard$$'}
   - O
   - ;
   - ''''
@@ -65,7 +65,7 @@ layers:
   - .
   - '`'
   - F12
-  - {t: '&rgb_ug_status_macro', h: Magic}
+  - '&magic'
   - ''
   - ''
   - ''
@@ -146,7 +146,7 @@ layers:
   - '3'
   - KP ENTER
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '&rgb_ug_status_macro', h: Cursor}
+  - '&magic'
   - CAPS
   - INS
   - F11
@@ -165,12 +165,12 @@ layers:
   Media:
   - BRIGHTNESS DEC
   - BRIGHTNESS INC
-  - PREV
-  - PLAY PAUSE
-  - NEXT
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - MUTE
+  - $$mdi:volume-off$$
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -308,7 +308,7 @@ layers:
   - ''
   - ''
   - Reset
-  - {type: held}
+  - ''
   - ''
   - ''
   - ''
@@ -389,7 +389,7 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held alternate}
+  - ''
   - ''
   - ''
   - ''
